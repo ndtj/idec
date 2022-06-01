@@ -1,0 +1,27 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# idec
+
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+Estudo preliminar sobre planos de saúde.
+
+## Fase 1: Listagem
+
+Base TJSP: [Link](https://github.com/ndtj/idec/blob/master/data-raw/dados_tjsp.xlsx)
+
+Base TJRS: [Link](https://github.com/ndtj/idec/blob/master/data-raw/dados_tjrs.xlsx)
+

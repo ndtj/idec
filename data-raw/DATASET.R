@@ -69,6 +69,8 @@ dados_tjrs <- tjrs_raw |>
     assunto = assunto,
     outros_numeros = cod_documento
   ) |>
-  tidyr::unnest(ementa)
+  tidyr::unnest(ementa) |>
+  dplyr::mutate(data_julgamento = as.Date(lubridate::ymd_hms(data_julgamento))) |>
+  dplyr::filter(lubridate::year(data_julgamento) >= 2015)
 
 writexl::write_xlsx(dados_tjrs, "data-raw/dados_tjrs.xlsx")
